@@ -1,0 +1,404 @@
+.main1 {
+    display: grid; 
+	min-height: 100vh; 
+	grid-template-areas: "marcas marcas marcas"
+        "productos servicios contacto";
+        a {
+            text-decoration: none;
+            color: white;
+        } 
+}
+	
+.marcas {
+    grid-area: marcas;
+    font-family: "cabin";
+    text-decoration: none;
+	border: 1px solid gold;
+    text-align: center;
+    background: linear-gradient(to top,rgb(46, 45, 45), rgb(14, 9, 9));
+    color: white;
+    
+    
+    	
+}
+
+a:hover {
+    color: rgb(29, 14, 165);
+}
+
+.marcas2 {
+    padding-bottom: 50px;
+}
+	
+.productos {
+        grid-area: productos;
+        @extend .marcas;
+        
+	img 
+		{
+        width: 100%; 
+		height: 100% ;
+        }
+    }
+
+.servicios {
+    grid-area: servicios; 
+	@extend .marcas;
+
+
+	img {
+        width: 100%;
+        height: 100% ;
+    } 
+}
+	
+.contacto {
+    grid-area: contacto;
+    @extend .marcas;
+
+	img {
+        width: 100%; 
+		height: 100%; 
+    } 
+}
+
+.marcas1 {
+
+    list-style-type: none; 
+	text-decoration: none;
+        ul  {
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+            li {
+                padding: 5px;
+                list-style-type: none; 
+                text-decoration: none;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+        }
+            
+        
+			
+    }
+		 
+	
+
+	
+.main2 {
+	display: grid; 
+	min-height: 100vh;
+    background: linear-gradient(to left,rgb(46, 45, 45), rgb(14, 9, 9)); 
+	grid-template-areas: "marc"
+        "list"; 
+    }
+
+.titulomarcas {
+    grid-area: marc; 
+    text-align: right;
+        font-size: 2rem;
+        padding: 80px;
+        color: white;
+	
+    }
+		
+	
+.listmarcas {
+    
+	grid-area: list; 
+	list-style-type: none; 
+	text-decoration: none;
+
+	ul {
+		li {
+			list-style-type: none;
+			text-decoration: none; 
+			display: inline-block; 
+			height: 100%; 
+        }} 
+	img  {
+        width: 150px; 
+		height: 150px; 
+    }
+}
+
+.main3 {
+    display: grid; 
+	min-height: 100vh; 
+	grid-template-areas: "productosimg"
+        "listproductos"
+        "listproductos2"
+        "listproductos3"
+        "listproductos4"; 
+	
+}
+	
+.tituloproductos 
+	{
+        grid-area: productosimg; 
+        font-family: "cabin";
+    text-decoration: none;
+	border: 1px solid rgb(17, 17, 17);
+    text-align: center;
+    background: linear-gradient(to left,rgb(46, 45, 45), rgb(14, 9, 9));
+        text-align: right;
+        font-size: 2rem;
+        padding: 80px;
+        color: white;
+    }
+.listproductos {
+    grid-area: listproductos; 
+	font-family: "cabin";
+    text-decoration: none;
+	text-align: center;
+    background: linear-gradient(to top,rgb(46, 45, 45), rgb(14, 9, 9));
+    color: white;
+	padding: 10px; 
+	img {
+        width: 100%; 
+		height: 100%; 
+		object-fit: cover; 
+    }
+		
+        ul 
+		{ 
+            
+            li 
+			{
+                @extend .marcas;
+                list-style-type: none; 
+			text-decoration: none; 
+			display: inline-block; 
+			height: 100%; 
+            }
+        }
+}
+	
+.listproductos2 {
+    grid-area: listproductos2; 
+    font-family: "cabin";
+    text-decoration: none;
+	text-align: center;
+    background: linear-gradient(to bottom,rgb(46, 45, 45), rgb(14, 9, 9));
+    color: white;
+	padding: 10px; 
+	img {
+        width: 100%; 
+		height: 100%; 
+		object-fit: cover; 
+    }
+		
+        ul 
+		{ 
+            
+            li 
+			{
+                @extend .marcas;
+                list-style-type: none; 
+			text-decoration: none; 
+			display: inline-block; 
+			height: 100%; 
+            }
+        }
+}
+.listproductos3 {
+    grid-area: listproductos3; 
+	font-family: "cabin";
+    text-decoration: none;
+	text-align: center;
+    background: linear-gradient(to top,rgb(46, 45, 45), rgb(14, 9, 9));
+    color: white;
+	padding: 10px; 
+	img {
+        width: 100%; 
+		height: 100%; 
+		object-fit: cover; 
+    }
+		
+        ul 
+		{ 
+            
+            li 
+			{
+                @extend .marcas;
+                list-style-type: none; 
+			text-decoration: none; 
+			display: inline-block; 
+			height: 100%; 
+            }
+        }
+}
+		
+.listproductos4 {
+    grid-area: listproductos4; 
+	text-align: center; 
+	border: 1px solid black; 
+	font-size: 1.8rem; 
+	padding: 10px; 
+	img 
+		{
+            width: 80%; 
+		height: 80%; 
+        }
+
+	
+	ul {
+        li 
+			{
+                list-style-type: none; 
+			text-decoration: none; 
+			display: inline-block; 
+			height: 100%; 
+            }
+    }
+		
+}
+
+.main4 {    
+    display: grid; 
+	min-height: 100vh;
+    grid-template-areas: "tituloservicios"
+    "listservicios"
+    "listservicios2";
+    background: linear-gradient(to left,rgb(46, 45, 45), rgb(14, 9, 9));
+
+    }
+
+.tituloservicios{
+    grid-area: tituloservicios;
+    font-family: "cabin";
+    text-decoration: none;
+	border: 1px solid rgb(17, 17, 17);
+    text-align: center;
+    background: linear-gradient(to left,rgb(46, 45, 45), rgb(14, 9, 9));
+        text-align: right;
+        font-size: 2rem;
+        padding: 80px;
+        color: white;
+
+}
+
+.listservicios {
+    grid-area: listservicios;
+    
+    font-family: "cabin";
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+    ul {
+        
+        text-align: center;
+        margin: 1px;
+        padding: 1px;
+        p {
+            border: 1px solid white;
+            margin: 2px;
+            padding: 2px;
+            
+        }
+        
+                
+    }
+
+
+
+}
+
+.infoservicios {
+    display: flex; 
+    align-items: center; 
+   
+    
+
+}
+
+.localidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+      
+}
+
+
+.listservicios2 {
+    grid-area: listservicios2;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    iframe {
+        position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+   
+    
+
+}
+
+.main5{ 
+    display: grid;
+    grid-template-areas: "titulocontacto"
+    "form"
+    ;
+
+}
+
+.titulocontacto {
+    grid-area: titulocontacto;
+    font-family: "cabin" ;
+    text-decoration: none;
+    border: 1px solid rgb(17, 17, 17);
+    background: linear-gradient(to left,rgb(46, 45, 45), rgb(14, 9, 9));
+    text-align: right;
+    font-size: 2rem; 
+    padding: 80px;
+    color: white;
+    
+        
+
+    
+    
+}
+
+@media (max-width:1160px) {
+    .main1 {
+        grid-template-areas:
+            "marcas"
+            "productos"
+            "servicios"
+            "contacto";
+    }
+
+    .infoservicios{
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+}
+
+@media (max-width:890px) {
+    .gridconteiner {
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+
+    }
+}
+
+
+
+
+		
