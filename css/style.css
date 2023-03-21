@@ -335,20 +335,6 @@ a:hover {
   color: white;
 }
 
-@media (max-width: 1160px) {
-  .main1 {
-    grid-template-areas: "marcas" "productos" "servicios" "contacto";
-  }
-  .infoservicios {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media (max-width: 890px) {
-  .gridconteiner {
-    grid-template-areas: "header" "main" "footer";
-  }
-}
 .pie1 {
   display: flex;
   flex-direction: column;
@@ -375,6 +361,29 @@ a:hover {
   align-items: center;
   justify-content: space-around;
   color: white;
+}
+
+@media (max-width: 1160px) {
+  .main1 {
+    grid-template-areas: "marcas" "productos" "servicios" "contacto";
+  }
+  .infoservicios {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 890px) {
+  .gridconteiner {
+    grid-template-areas: "header" "main" "footer";
+  }
+}
+@media (max-width: 890px) {
+  .pie1 img {
+    width: 130px;
+  }
+  .pie3 {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

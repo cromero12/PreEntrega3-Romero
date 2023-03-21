@@ -373,31 +373,7 @@ a:hover {
     
 }
 
-@media (max-width:1160px) {
-    .main1 {
-        grid-template-areas:
-            "marcas"
-            "productos"
-            "servicios"
-            "contacto";
-    }
 
-    .infoservicios{
-        flex-wrap: wrap;
-        justify-content: center
-    }
-
-}
-
-@media (max-width:890px) {
-    .gridconteiner {
-      grid-template-areas: 
-      "header"
-      "main"
-      "footer";
-
-    }
-}
 
 
 
