@@ -59,7 +59,7 @@ footer {
   color: white;
 }
 
-.marcas, .listproductos3 ul li, .listproductos2 ul li, .listproductos ul li, .contacto, .servicios, .productos {
+.marcas, .listproductos4 ul li, .listproductos3 ul li, .listproductos2 ul li, .listproductos ul li, .contacto, .servicios, .productos {
   grid-area: marcas;
   font-family: "cabin";
   text-decoration: none;
@@ -234,14 +234,17 @@ a:hover {
 
 .listproductos4 {
   grid-area: listproductos4;
+  font-family: "cabin";
+  text-decoration: none;
   text-align: center;
-  border: 1px solid black;
-  font-size: 1.8rem;
+  background: linear-gradient(to top, rgb(46, 45, 45), rgb(14, 9, 9));
+  color: white;
   padding: 10px;
 }
 .listproductos4 img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .listproductos4 ul li {
   list-style-type: none;
