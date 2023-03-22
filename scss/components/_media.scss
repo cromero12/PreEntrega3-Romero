@@ -9,7 +9,7 @@
 
     .infoservicios{
         flex-wrap: wrap;
-        justify-content: center
+        justify-content: center;
     }
 
 }
@@ -31,7 +31,30 @@
         }
     }
     .pie3 { 
-        font-size: 12px;
-    }   
+        font-size: 12px; 
+    }
+    
+
+    
+} 
+
+@media (max-width:576px) {
+
+    .listproductos {
+        padding: 0;
+        ul {
+            padding: 0;
+        }
+    }
+    .tituloproductos{
+        padding: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        h2 {
+            text-align: center;
+        }
+    }
+       
     
 } 
