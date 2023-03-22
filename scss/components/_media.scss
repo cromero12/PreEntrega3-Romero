@@ -38,23 +38,44 @@
     
 } 
 
-@media (max-width:576px) {
+@mixin espacio40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-    .listproductos {
-        padding: 0;
+@mixin espacio0 {
+    padding: 0;
         ul {
             padding: 0;
         }
+  }
+
+
+@media (max-width:576px) {
+
+    .listproductos {
+        @include espacio0;
     }
+    .listproductos2 {
+        @include espacio0;
+    }
+    .listproductos3 {
+        @include espacio0;
+    }
+    .listproductos4 {
+        @include espacio0;
+    }
+
+    
     .tituloproductos{
-        padding: 0px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        @include espacio40;
         
         h2 {
             text-align: center;
         }
     }
+
+
        
     
 } 
