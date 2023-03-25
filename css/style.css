@@ -310,6 +310,11 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.localidades h4 {
+  border: 1px solid white;
+  margin: 2px;
+  padding: 2px;
+}
 
 .listservicios2 {
   grid-area: listservicios2;
@@ -317,9 +322,11 @@ a:hover {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  margin-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 .listservicios2 iframe {
+  padding-top: 50px;
   position: absolute;
   top: 0;
   left: 0;
