@@ -1,89 +1,93 @@
-@media (max-width:1160px) {
-    .main1 {
-        grid-template-areas:
-            "marcas"
-            "productos"
-            "servicios"
-            "contacto";
+@media (max-width: 1160px) {
+  .main1 {
+    grid-template-areas:
+      "marcas"
+      "pres";
+  }
+  .main1 {
+    h2 {
+      font-size: 1.3rem;
     }
+  }
 
-    .infoservicios{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
+  .infoservicios {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-@media (max-width:890px) {
-    .gridconteiner {
-      grid-template-areas: 
+@media (max-width: 890px) {
+  .gridconteiner {
+    grid-template-areas:
       "header"
       "main"
       "footer";
-
+  }
+  .main1 {
+    h2 {
+      font-size: 1.1rem;
     }
+  }
 }
 
-@media (max-width:890px) {
-    .pie1 {
-        img {
-            width: 130px; 
-        }
+@media (max-width: 890px) {
+  .pie1 {
+    img {
+      width: 130px;
     }
-    .pie3 { 
-        font-size: 12px; 
-    }
-    
-
-    
-} 
+  }
+  .pie3 {
+    font-size: 12px;
+  }
+}
 
 @mixin espacio40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 @mixin espacio0 {
+  padding: 0;
+  ul {
     padding: 0;
-        ul {
-            padding: 0;
-        }
+  }
+}
+
+@media (max-width: 576px) {
+  .main1 {
+    h2 {
+      font-size: 0.9rem;
+    }
   }
 
+  .listproductos {
+    @include espacio0;
+  }
+  .listproductos2 {
+    @include espacio0;
+  }
+  .listproductos3 {
+    @include espacio0;
+  }
+  .listproductos4 {
+    @include espacio0;
+  }
 
-@media (max-width:576px) {
+  .tituloproductos {
+    padding: 0%;
+    @include espacio40;
 
-    .listproductos {
-        @include espacio0;
+    h2 {
+      text-align: center;
     }
-    .listproductos2 {
-        @include espacio0;
-    }
-    .listproductos3 {
-        @include espacio0;
-    }
-    .listproductos4 {
-        @include espacio0;
-    }
+  }
 
-    
-    .tituloproductos{
-        padding: 0%;
-        @include espacio40;
-        
-        h2 {
-            text-align: center;
-        }
-    }
+  .tituloservicios {
+    padding: 0%;
+    @include espacio40;
 
-    .tituloservicios{
-        padding: 0%;
-        @include espacio40;
-        
-        h2 {
-            text-align: center;
-        }
+    h2 {
+      text-align: center;
     }
-       
-    
-} 
+  }
+}
