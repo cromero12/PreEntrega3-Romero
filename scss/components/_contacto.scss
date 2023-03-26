@@ -1,0 +1,17 @@
+.main5 {
+    display: grid;
+    grid-template-areas:
+      "titulocontacto"
+      "form";
+  }
+  .titulocontacto {
+    grid-area: titulocontacto;
+    font-family: "cabin";
+    text-decoration: none;
+    border: 1px solid rgb(17, 17, 17);
+    background: linear-gradient(to left, rgb(46, 45, 45), rgb(14, 9, 9));
+    text-align: right;
+    font-size: 2rem;
+    padding: 80px;
+    color: white;
+  }
