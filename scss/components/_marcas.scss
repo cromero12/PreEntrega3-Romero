@@ -1,0 +1,32 @@
+.main2 {
+  display: grid;
+  min-height: 100vh;
+  background: linear-gradient(to left, rgb(46, 45, 45), rgb(14, 9, 9));
+  grid-template-areas:
+    "marc"
+    "list";
+}
+.titulomarcas {
+  grid-area: marc;
+  text-align: right;
+  font-size: 2rem;
+  padding: 80px;
+  color: white;
+}
+.listmarcas {
+  grid-area: list;
+  list-style-type: none;
+  text-decoration: none;
+  ul {
+    li {
+      list-style-type: none;
+      text-decoration: none;
+      display: inline-block;
+      height: 100%;
+    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
