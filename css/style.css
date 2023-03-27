@@ -182,8 +182,6 @@ footer {
   .marca1 img {
     width: 200px;
   }
-}
-@media (max-width: 890px) {
   .pie1 img {
     width: 130px;
   }
@@ -194,6 +192,9 @@ footer {
 @media (max-width: 576px) {
   .main1 h2 {
     font-size: 0.9rem;
+  }
+  .nav1 {
+    display: none;
   }
   .listproductos {
     padding: 0;
@@ -289,6 +290,7 @@ footer {
   text-decoration: none;
   display: inline-block;
   height: 100%;
+  width: 400px;
 }
 
 .listproductos2 {
@@ -310,6 +312,7 @@ footer {
   text-decoration: none;
   display: inline-block;
   height: 100%;
+  width: 400px;
 }
 
 .listproductos3 {
@@ -331,6 +334,7 @@ footer {
   text-decoration: none;
   display: inline-block;
   height: 100%;
+  width: 400px;
 }
 
 .listproductos4 {

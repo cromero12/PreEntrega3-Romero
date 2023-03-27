@@ -44,8 +44,6 @@
       width: 200px;
     }
   }
-}
-@media (max-width: 890px) {
   .pie1 {
     img {
       width: 130px;
@@ -70,6 +68,9 @@
     h2 {
       font-size: 0.9rem;
     }
+  }
+  .nav1 {
+    display: none;
   }
   .listproductos {
     @include espacio0;
