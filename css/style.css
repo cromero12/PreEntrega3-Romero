@@ -454,10 +454,16 @@ footer {
   color: white;
   text-align: center;
   align-items: center;
+  padding: 2px;
+  margin: 2px;
 }
 .marca1 h3 {
   font-size: 2rem;
   padding-bottom: 20px;
+}
+.marca1 p {
+  padding: 2px;
+  margin: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
