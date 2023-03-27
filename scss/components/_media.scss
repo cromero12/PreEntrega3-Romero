@@ -1,3 +1,11 @@
+@media (max-width: 3000px) {
+  .marca1 {
+    img {
+      width: 400px;
+    }
+  }
+}
+
 @media (max-width: 1160px) {
   .main1 {
     grid-template-areas:
@@ -13,6 +21,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .marca1 {
+    img {
+      width: 300px;
+    }
+  }
 }
 @media (max-width: 890px) {
   .gridconteiner {
@@ -24,6 +37,11 @@
   .main1 {
     h2 {
       font-size: 1.1rem;
+    }
+  }
+  .marca1 {
+    img {
+      width: 200px;
     }
   }
 }
@@ -92,5 +110,10 @@
   }
   .localidades {
     margin-right: 0px;
+  }
+  .marca1 {
+    img {
+      width: 150px;
+    }
   }
 }

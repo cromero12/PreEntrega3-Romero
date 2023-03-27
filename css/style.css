@@ -152,6 +152,11 @@ footer {
   color: white;
 }
 
+@media (max-width: 3000px) {
+  .marca1 img {
+    width: 400px;
+  }
+}
 @media (max-width: 1160px) {
   .main1 {
     grid-template-areas: "marcas" "pres";
@@ -163,6 +168,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .marca1 img {
+    width: 300px;
+  }
 }
 @media (max-width: 890px) {
   .gridconteiner {
@@ -170,6 +178,9 @@ footer {
   }
   .main1 h2 {
     font-size: 1.1rem;
+  }
+  .marca1 img {
+    width: 200px;
   }
 }
 @media (max-width: 890px) {
@@ -235,6 +246,9 @@ footer {
   }
   .localidades {
     margin-right: 0px;
+  }
+  .marca1 img {
+    width: 150px;
   }
 }
 .main3 {
@@ -414,6 +428,36 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.main2 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: "marc" "list";
+}
+
+.titmarcas {
+  grid-area: marc;
+  font-family: "cabin";
+  text-decoration: none;
+  border: 1px solid rgb(17, 17, 17);
+  text-align: center;
+  background: linear-gradient(to left, rgb(46, 45, 45), rgb(14, 9, 9));
+  text-align: right;
+  font-size: 2rem;
+  padding: 80px;
+  color: white;
+}
+
+.marca1 {
+  display: flex;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.marca1 h3 {
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
