@@ -17,12 +17,12 @@
   text-align: right;
   font-size: 2rem;
   padding: 80px;
-  color: white;
+  color: $color-principal;
 }
 .listservicios {
   grid-area: listservicios;
   font-family: "cabin";
-  color: white;
+  color: $color-principal;
   text-align: center;
   margin-right: 0px;
   ul {
@@ -60,7 +60,7 @@
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  color: white;
+  color: $color-principal;
   text-align: center;
 
   iframe {

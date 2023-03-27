@@ -39,7 +39,7 @@ footer {
 }
 .encab nav li a {
   list-style-type: none;
-  color: white;
+  color: rgb(216, 216, 216);
   padding: 0 20px;
   font-size: 1.2rem;
   text-decoration: none;
@@ -56,10 +56,10 @@ footer {
 }
 .main1 a {
   text-decoration: none;
-  color: white;
+  color: rgb(216, 216, 216);
 }
 .main1 a:hover {
-  color: rgb(29, 14, 165);
+  color: goldenrod;
 }
 
 .marcas, .listproductos4 ul li, .listproductos3 ul li, .listproductos2 ul li, .listproductos ul li, .contacto, .servicios, .productos {
@@ -69,7 +69,10 @@ footer {
   border: 1px solid gold;
   text-align: center;
   background: linear-gradient(to top, rgb(46, 45, 45), rgb(14, 9, 9));
-  color: white;
+  color: rgb(216, 216, 216);
+}
+.marcas:hover, .listproductos4 ul li:hover, .listproductos3 ul li:hover, .listproductos2 ul li:hover, .listproductos ul li:hover, .contacto:hover, .servicios:hover, .productos:hover {
+  color: goldenrod;
 }
 
 .presentacion {
@@ -127,7 +130,7 @@ footer {
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, rgb(46, 45, 45), rgb(14, 9, 9));
-  color: white;
+  color: rgb(216, 216, 216);
   padding-top: 20px;
 }
 .pie1 img {
@@ -149,7 +152,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: rgb(216, 216, 216);
 }
 
 @media (max-width: 3000px) {
@@ -268,7 +271,7 @@ footer {
   text-align: right;
   font-size: 2rem;
   padding: 80px;
-  color: white;
+  color: rgb(216, 216, 216);
 }
 
 .listproductos {
@@ -277,7 +280,7 @@ footer {
   text-decoration: none;
   text-align: center;
   background: linear-gradient(to top, rgb(46, 45, 45), rgb(14, 9, 9));
-  color: white;
+  color: rgb(216, 216, 216);
   padding: 10px;
 }
 .listproductos img {
@@ -299,7 +302,7 @@ footer {
   text-decoration: none;
   text-align: center;
   background: linear-gradient(to bottom, rgb(46, 45, 45), rgb(14, 9, 9));
-  color: white;
+  color: rgb(216, 216, 216);
   padding: 10px;
 }
 .listproductos2 img {
@@ -321,7 +324,7 @@ footer {
   text-decoration: none;
   text-align: center;
   background: linear-gradient(to top, rgb(46, 45, 45), rgb(14, 9, 9));
-  color: white;
+  color: rgb(216, 216, 216);
   padding: 10px;
 }
 .listproductos3 img {
@@ -343,7 +346,7 @@ footer {
   text-decoration: none;
   text-align: center;
   background: linear-gradient(to top, rgb(46, 45, 45), rgb(14, 9, 9));
-  color: white;
+  color: rgb(216, 216, 216);
   padding: 10px;
 }
 .listproductos4 img {
@@ -375,13 +378,13 @@ footer {
   text-align: right;
   font-size: 2rem;
   padding: 80px;
-  color: white;
+  color: rgb(216, 216, 216);
 }
 
 .listservicios {
   grid-area: listservicios;
   font-family: "cabin";
-  color: white;
+  color: rgb(216, 216, 216);
   text-align: center;
   margin-right: 0px;
 }
@@ -422,7 +425,7 @@ footer {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  color: white;
+  color: rgb(216, 216, 216);
   text-align: center;
 }
 .listservicios2 iframe {
@@ -450,12 +453,12 @@ footer {
   text-align: right;
   font-size: 2rem;
   padding: 80px;
-  color: white;
+  color: rgb(216, 216, 216);
 }
 
 .marca1 {
   display: flex;
-  color: white;
+  color: rgb(216, 216, 216);
   text-align: center;
   align-items: center;
   padding: 2px;
