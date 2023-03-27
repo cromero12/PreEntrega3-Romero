@@ -230,6 +230,12 @@ footer {
   .tituloservicios {
     text-align: center;
   }
+  .infoservicios {
+    margin-right: 0px;
+  }
+  .localidades {
+    margin-right: 0px;
+  }
 }
 .main3 {
   display: grid;
@@ -359,7 +365,7 @@ footer {
   font-family: "cabin";
   color: white;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 .listservicios ul {
   text-align: center;
