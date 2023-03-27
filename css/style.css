@@ -456,6 +456,7 @@ footer {
   align-items: center;
   padding: 2px;
   margin: 2px;
+  border: 1px solid gold;
 }
 .marca1 h3 {
   font-size: 2rem;
