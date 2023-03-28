@@ -21,6 +21,7 @@
   text-align: center;
   background: $backgraund-principal;
   color: $color-principal;
+  padding-top: 20px;
   &:hover {
     color: goldenrod;
   }
@@ -32,39 +33,31 @@
   grid-template-areas: "productos servicios contacto";
   padding-bottom: 50px;
 }
-
-.productos {
-  grid-area: productos;
-  @extend .marcas;
+@mixin proimag {
   width: 100%;
   height: 100%;
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
+}
+.productos {
+  grid-area: productos;
+  @extend .marcas;
+  @include proimag;
 }
 
 .servicios {
   grid-area: servicios;
   @extend .marcas;
-  width: 100%;
-  height: 100%;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  @include proimag;
 }
 
 .contacto {
   grid-area: contacto;
   @extend .marcas;
-  width: 100%;
-  height: 100%;
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  @include proimag;
 }
 
 .marcas1 {

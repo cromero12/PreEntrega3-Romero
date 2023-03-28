@@ -70,6 +70,7 @@ footer {
   text-align: center;
   background: linear-gradient(to top, rgb(46, 45, 45), rgb(14, 9, 9));
   color: rgb(216, 216, 216);
+  padding-top: 20px;
 }
 .marcas:hover, .listproductos4 ul li:hover, .listproductos3 ul li:hover, .listproductos2 ul li:hover, .listproductos ul li:hover, .contacto:hover, .servicios:hover, .productos:hover {
   color: goldenrod;
@@ -90,6 +91,7 @@ footer {
 .productos img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .servicios {
@@ -100,6 +102,7 @@ footer {
 .servicios img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .contacto {
@@ -110,6 +113,7 @@ footer {
 .contacto img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .marcas1 {
@@ -159,6 +163,9 @@ footer {
   .marca1 img {
     width: 400px;
   }
+  .marca1 p {
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 1160px) {
   .main1 {
@@ -174,16 +181,28 @@ footer {
   .marca1 img {
     width: 300px;
   }
+  .marca1 p {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 890px) {
   .gridconteiner {
     grid-template-areas: "header" "main" "footer";
+  }
+  .presentacion {
+    grid-area: pres;
+    display: grid;
+    grid-template-areas: "productos" "servicios" "contacto";
+    padding-bottom: 50px;
   }
   .main1 h2 {
     font-size: 1.1rem;
   }
   .marca1 img {
     width: 200px;
+  }
+  .marca1 p {
+    font-size: 0.8rem;
   }
   .pie1 img {
     width: 130px;
@@ -192,12 +211,34 @@ footer {
     font-size: 12px;
   }
 }
+@media (max-width: 768px) {
+  .nav1 {
+    display: none;
+  }
+  .marca1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .marca1 img {
+    width: 300px;
+  }
+  .marca1 img {
+    width: 250px;
+  }
+  .marca1 h3 {
+    display: none;
+  }
+  .order {
+    order: -1;
+  }
+}
 @media (max-width: 576px) {
   .main1 h2 {
     font-size: 0.9rem;
   }
-  .nav1 {
-    display: none;
+  .marcas1 {
+    padding-left: 0px;
+    justify-content: center;
   }
   .listproductos {
     padding: 0;
@@ -250,9 +291,6 @@ footer {
   }
   .localidades {
     margin-right: 0px;
-  }
-  .marca1 img {
-    width: 150px;
   }
 }
 .main3 {
@@ -411,7 +449,7 @@ footer {
 .localidades {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 0.2rem;
 }
 .localidades h4 {
   border: 1px solid white;
